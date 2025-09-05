@@ -1,37 +1,20 @@
-/* Estilos personalizados para la barra de progreso */
-.progress-bar-container {
-    height: 8px;
-    background-color: #a8a29e; /* gray-400 */
-    border-radius: 9999px;
-    overflow: hidden;
-}
-.progress-bar { 
-    height: 100%;
-    transition: width 0.5s ease-in-out;
-}
-/* Estilos del menú de hamburguesa */
-.nav-menu {
-    transform: translateY(-100%);
+/* Estilos del menú de hamburguesa y las barras de progreso */
+.hamburger-menu {
+    cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-.nav-menu.active {
-    transform: translateY(0);
-}
-@media (min-width: 768px) {
-    .nav-menu.active {
-        transform: translateY(0);
-    }
-}
-er-menu.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+
+.hamburger-menu.active {
+    transform: rotate(90deg);
 }
 
-.nav-menu.hidden {
-    display: none;
+@keyframes progress-animation {
+    from { width: 0; }
 }
-.nav-menu.active {
-    display: flex;
-    flex-direction: column;
+
+.progress-bar {
+    height: 100%;
+    transition: width 1s ease-in-out;
 }
 
 .progress-bar-container {
@@ -41,7 +24,12 @@ er-menu.active span:nth-child(3) {
     overflow: hidden;
 }
 
-.progress-bar {
-    height: 100%;
-    transition: width 1s ease-in-out;
+.nav-menu.hidden {
+    transform: translateY(-100%);
+}
+
+@media (min-width: 768px) {
+    .nav-menu.hidden {
+        transform: translateY(0);
+    }
 }

@@ -1,5 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Animación de las barras de progreso
+    // Lógica para el menú de hamburguesa
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = navMenu.querySelectorAll('a');
+
+    hamburgerBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+                navMenu.classList.add('hidden');
+            }
+        });
+    });
+
+    // Lógica para las barras de progreso
     const progressBars = document.querySelectorAll('.progress-bar');
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -10,21 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(progressBar);
             }
         });
-    }, { threshold: 0.5 }); // Inicia la animación cuando la barra es 50% visible
+    }, { threshold: 0.5 }); // Barra 50% visible
 
     progressBars.forEach(bar => {
         observer.observe(bar);
     });
 
-    // Lógica del menú de hamburguesa
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburgerBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-
-    // Validación del formulario de contacto
+    // Lógica para el formulario de contacto
     const contactForm = document.getElementById('contact-form');
     const formMessage = document.getElementById('form-message');
     const nameInput = document.getElementById('name');
@@ -39,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('name-error').classList.add('hidden');
         document.getElementById('email-error').classList.add('hidden');
         document.getElementById('message-error').classList.add('hidden');
+        formMessage.classList.add('hidden');
         
         // Validación del nombre
         if (nameInput.value.trim() === '') {
@@ -47,7 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         // Validación del correo
-        if (emailInput.value.trim() === '' || !emailInput.value.includes('@')) {
+        const validateEmail = (email) => {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        };
+        if (!validateEmail(emailInput.value)) {
             document.getElementById('email-error').classList.remove('hidden');
             isValid = false;
         }

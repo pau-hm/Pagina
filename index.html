@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Personal</title>
-     <!-- Tailwind CSS CDN -->
+    <title>Portafolio Personal de Paula Herrera</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Enlace a la hoja de estilos externa -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Archivo de estilos personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-stone-100 text-stone-900 font-sans antialiased">
+<body class="bg-amber-50 text-stone-900 font-sans antialiased">
     
     <!-- Encabezado -->
-    <header class="sticky top-0 z-50 bg-stone-800 shadow-md">
+    <header class="sticky top-0 z-50 bg-stone-800 shadow-lg">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-stone-100">Mi Portafolio</a>
+            <a href="#" class="text-2xl font-bold text-white rounded-md p-2 hover:bg-stone-700 transition-colors">Mi Portafolio</a>
             <div class="md:hidden">
-                <button id="hamburger-btn" class="hamburger-menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="hamburger-btn" class="hamburger-menu text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
             <ul id="nav-menu" class="nav-menu absolute top-full left-0 w-full bg-stone-800 py-4 transition-transform duration-300 ease-in-out hidden md:flex md:static md:w-auto md:space-x-4 md:py-0">
-                <li><a href="#acerca-de-mi" class="block px-4 py-2 hover:text-orange-400">Acerca de Mí</a></li>
-                <li><a href="#habilidades" class="block px-4 py-2 hover:text-orange-400">Habilidades</a></li>
-                <li><a href="#proyectos" class="block px-4 py-2 hover:text-orange-400">Proyectos</a></li>
-                <li><a href="#contacto" class="block px-4 py-2 hover:text-orange-400">Contacto</a></li>
+                <li><a href="#acerca-de-mi" class="block px-4 py-2 text-white hover:text-amber-400 rounded-md transition-colors">Acerca de Mí</a></li>
+                <li><a href="#habilidades" class="block px-4 py-2 text-white hover:text-amber-400 rounded-md transition-colors">Habilidades</a></li>
+                <li><a href="#proyectos" class="block px-4 py-2 text-white hover:text-amber-400 rounded-md transition-colors">Proyectos</a></li>
+                <li><a href="#contacto" class="block px-4 py-2 text-white hover:text-amber-400 rounded-md transition-colors">Contacto</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
 
     <!-- Sección principal -->
-    <section class="flex flex-col items-center justify-center text-center p-16 h-screen md:h-[60vh] bg-gradient-to-r from-blue-600 to-blue-900">
+    <section class="flex flex-col items-center justify-center text-center p-16 h-screen md:h-[60vh] bg-gradient-to-r from-amber-600 to-amber-900">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white">¡Hola! Soy Paula Herrera</h1>
         <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl">Joven buscando nuevas experiencias en la área de alimentos, manualidades y diseño gráfico</p>
-        <a href="#contacto" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">¡Contáctame!</a>
+        <a href="#contacto" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">¡Contáctame!</a>
     </section>
 
     <main class="container mx-auto px-4 py-16">
@@ -46,127 +46,127 @@
             <div class="flex flex-col md:flex-row items-center justify-center gap-12">
                 <!-- Imagen de Perfil -->
                 <div class="md:w-1/2 flex justify-center">
-                    <img src="https://i.imgur.com/M4Y4U9y.jpeg" alt="Foto de perfil" class="w-48 h-48 rounded-full border-4 border-indigo-500 shadow-lg object-cover">
+                    <img src="https://i.imgur.com/M4Y4U9y.jpeg" alt="Foto de perfil" class="w-64 h-64 rounded-full border-4 border-amber-500 shadow-lg object-cover transform transition-transform duration-300 hover:scale-105">
                 </div>
                 <!-- Texto de Descripción -->
-                <div class="md:w-1/2 text-center md:text-left space-y-4">
-                    <p class="text-lg text-stones-700">Soy una joven autodidacta en busca de conocimientos que me ayuden ampliar mis habilidades. Me interesa el mundo de la gastronomía y siempre estoy dispuesta a estudiar nuevas técnicas, recetas, y tips los cuales pueda utilizarlos en un futuro.</p>
+                <div class="md:w-1/2 text-center md:text-left space-y-4 bg-amber-100 p-8 rounded-xl shadow-lg border border-amber-400">
+                    <p class="text-lg text-amber-800">Soy una joven autodidacta en busca de conocimientos que me ayuden a ampliar mis habilidades. Me interesa el mundo de la gastronomía y siempre estoy dispuesta a estudiar nuevas técnicas, recetas, y tips que pueda utilizar en un futuro.</p>
                 </div>
             </div>
         </section>
 
-        <hr class="border-stone-400 my-16">
+        <hr class="border-amber-400 my-16">
 
         <!-- Sección "Habilidades" -->
         <section id="habilidades" class="mb-16">
             <h2 class="text-3xl font-bold text-center mb-8">Mis Habilidades</h2>
             <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Habilidad: Percepción -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col items-center">
-                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                <div class="bg-stone-800 text-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-eye text-5xl text-amber-400 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-2">Percepción</h3>
-                    <p class="text-sm text-gray-400 mb-4">Percibo los detalles, creo soluciones.</p>
-                    <div class="progress-bar-container w-full">
-                        <div class="progress-bar bg-orange-500 rounded-full" data-progress="90"></div>
+                    <p class="text-sm text-stone-300 mb-4">Percibo los detalles, creo soluciones.</p>
+                    <div class="progress-bar-container w-full bg-stone-700 rounded-full h-2">
+                        <div class="progress-bar bg-amber-500 rounded-full h-full" data-progress="90"></div>
                     </div>
                 </div>
                 <!-- Habilidad: Planificación -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col items-center">
-                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+                <div class="bg-stone-800 text-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-list-check text-5xl text-amber-400 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-2">Planificación</h3>
-                    <p class="text-sm text-gray-400 mb-4">Organizo y distribuyo tareas a cumplir.</p>
-                    <div class="progress-bar-container w-full">
-                        <div class="progress-bar bg-blue-500 rounded-full" data-progress="85"></div>
+                    <p class="text-sm text-stone-300 mb-4">Organizo y distribuyo tareas a cumplir.</p>
+                    <div class="progress-bar-container w-full bg-stone-700 rounded-full h-2">
+                        <div class="progress-bar bg-amber-600 rounded-full h-full" data-progress="85"></div>
                     </div>
                 </div>
                 <!-- Habilidad: Habilidad manual -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col items-center">
-                    <i class="fab fa-js-square text-5xl text-yellow-500 mb-4"></i>
+                <div class="bg-stone-800 text-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-hand-sparkles text-5xl text-amber-400 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-2">Habilidad manual</h3>
-                    <p class="text-sm text-gray-400 mb-4">Realizo mis trabajos con mucha dedicación.</p>
-                    <div class="progress-bar-container w-full">
-                        <div class="progress-bar bg-yellow-500 rounded-full" data-progress="80"></div>
+                    <p class="text-sm text-stone-300 mb-4">Realizo mis trabajos con mucha dedicación.</p>
+                    <div class="progress-bar-container w-full bg-stone-700 rounded-full h-2">
+                        <div class="progress-bar bg-amber-700 rounded-full h-full" data-progress="80"></div>
                     </div>
                 </div>
                 <!-- Habilidad: Liderazgo -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col items-center">
-                    <i class="fas fa-grip-lines text-5xl text-teal-500 mb-4"></i>
+                <div class="bg-stone-800 text-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-users-line text-5xl text-amber-400 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-2">Liderazgo</h3>
-                    <p class="text-sm text-gray-400 mb-4">Apoyo a mi equipo para alcanzar metas comunes.</p>
-                    <div class="progress-bar-container w-full">
-                        <div class="progress-bar bg-teal-500 rounded-full" data-progress="95"></div>
+                    <p class="text-sm text-stone-300 mb-4">Apoyo a mi equipo para alcanzar metas comunes.</p>
+                    <div class="progress-bar-container w-full bg-stone-700 rounded-full h-2">
+                        <div class="progress-bar bg-amber-800 rounded-full h-full" data-progress="95"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr class="border-stone-400 my-16">
+        <hr class="border-amber-400 my-16">
 
         <!-- Sección "Proyectos" -->
         <section id="proyectos" class="mb-16">
             <h2 class="text-3xl font-bold text-center mb-8">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Tarjeta de Proyecto 1 -->
-                <div class="project-card bg-stone-200 rounded-lg shadow-lg overflow-hidden border border-stone-400">
+                <div class="project-card bg-amber-100 rounded-xl shadow-lg overflow-hidden border border-amber-400 transform transition-transform duration-300 hover:scale-105">
                     <img src="https://www.questionpro.com/blog/wp-content/uploads/2023/06/2406-Portada-diseno-de-producto.jpg" alt="Imagen del proyecto 1" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-stone-900">Conceptualización y ejecución de una marca ficticia "Café Perla"</h3>
-                        <p class="text-gray-400 text-sm">Diseñe el logotipo, flyers para redes sociales, producto final, mercancía y sitio web, aplicando habilidades de diseño en Canva.</p>
+                        <p class="text-stone-600 text-sm">Diseñé el logotipo, flyers para redes sociales, producto final, mercancía y sitio web, aplicando habilidades de diseño en Canva.</p>
                         <div class="mt-4 flex justify-end">
-                            <a href="https://www.canva.com/design/DAGyB0nO0u8/DjHleYmKB-kGSGc149RHuA/view?utm_content=DAGyB0nO0u8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd33630c2d2" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded-md hover:bg-indigo-600 transition-colors">Ver Proyecto</a>
+                            <a href="https://www.canva.com/design/DAGyB0nO0u8/DjHleYmKB-kGSGc149RHuA/view?utm_content=DAGyB0nO0u8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd33630c2d2" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-amber-700 text-white text-sm font-medium rounded-md hover:bg-amber-800 transition-colors">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta de Proyecto 2 -->
-                <div class="project-card bg-stone-200 rounded-lg shadow-lg overflow-hidden border border-stone-400">
+                <div class="project-card bg-amber-100 rounded-xl shadow-lg overflow-hidden border border-amber-400 transform transition-transform duration-300 hover:scale-105">
                     <img src="https://img.freepik.com/vector-premium/ilustracion-mostrador-panaderia-pasteles-pasteles-expuestos_1304383-85.jpg?semt=ais_hybrid&w=740&q=80" alt="Imagen del proyecto 2" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-stone-900">Sugar Bakery</h3>
-                        <p class="text-gray-400 text-sm">Emprendimiento familiar en proceso que consiste en la venta de postres, empleando conocimientos técnicos obtenidos en cursos especializados en la Escuela de los Chefs y el Centro Polifuncional Zumar.</p>
+                        <p class="text-stone-600 text-sm">Emprendimiento familiar en proceso que consiste en la venta de postres, empleando conocimientos técnicos obtenidos en cursos especializados en la Escuela de los Chefs y el Centro Polifuncional Zumar.</p>
                         <div class="mt-4 flex justify-end">
-                            <a href="https://www.canva.com/design/DAGyB3WzFu8/FpVJqvHqRQNIylJp8OXFmw/view?utm_content=DAGyB3WzFu8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h995284e8ef" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded-md hover:bg-indigo-600 transition-colors">Ver Proyecto</a>
+                            <a href="https://www.canva.com/design/DAGyB3WzFu8/FpVJqvHqRQNIylJp8OXFmw/view?utm_content=DAGyB3WzFu8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h995284e8ef" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-amber-700 text-white text-sm font-medium rounded-md hover:bg-amber-800 transition-colors">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta de Proyecto 3 -->
-                <div class="project-card bg-stone-200 rounded-lg shadow-lg overflow-hidden border border-stone-400">
+                <div class="project-card bg-amber-100 rounded-xl shadow-lg overflow-hidden border border-amber-400 transform transition-transform duration-300 hover:scale-105">
                     <img src="https://img.freepik.com/vector-premium/artistas-pintando-paleta-pinceles-caballete-estudio-arte-clases-abiertas-arte-galeria-arte-moderno-acuarela-o-pintura-al-oleo-hobby-creativo-taller-personas-creando-obras-arte-tradicionales_458444-1181.jpg" alt="Imagen del proyecto 3" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-stone-900">Diseño y Manualidades</h3>
-                        <p class="text-gray-400 text-sm">Creación de piezas decorativas y utilitarias a mano; enfocándome en proyectos como la creación de flores con distintos materiales, pintura y diseño.</p>
+                        <p class="text-stone-600 text-sm">Creación de piezas decorativas y utilitarias a mano; enfocándome en proyectos como la creación de flores con distintos materiales, pintura y diseño.</p>
                         <div class="mt-4 flex justify-end">
-                            <a href="https://www.canva.com/design/DAGyB4D9XnY/sHJ8SdVvZpgFNxvPuPNRqA/view?utm_content=DAGyB4D9XnY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h271d6d1627" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded-md hover:bg-indigo-600 transition-colors">Ver Proyecto</a>
+                            <a href="https://www.canva.com/design/DAGyB4D9XnY/sHJ8SdVvZpgFNxvPuPNRqA/view?utm_content=DAGyB4D9XnY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h271d6d1627" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-amber-700 text-white text-sm font-medium rounded-md hover:bg-amber-800 transition-colors">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr class="border-stone-400 my-16">
+        <hr class="border-amber-400 my-16">
 
         <!-- Sección "Contacto" -->
         <section id="contacto" class="mb-16">
             <h2 class="text-3xl font-bold text-center mb-8">Contáctame</h2>
-            <div class="max-w-2xl mx-auto bg-stone-200 p-8 rounded-lg shadow-lg border border-stone-400">
+            <div class="max-w-2xl mx-auto bg-amber-100 p-8 rounded-xl shadow-lg border border-amber-400">
                 <form id="contact-form" class="space-y-4">
                     <div>
-                        <label for="name" class="block text-stone-700">Nombre</label>
-                        <input type="text" id="name" name="name" required class="w-full mt-1 p-2 bg-stone-300 border border-stone-400 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                        <p id="name-error" class="text-sm text-red-400 hidden mt-1">El nombre es requerido.</p>
+                        <label for="name" class="block text-stone-700 font-semibold">Nombre</label>
+                        <input type="text" id="name" name="name" required class="w-full mt-1 p-2 bg-amber-200 border border-amber-400 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-700">
+                        <p id="name-error" class="text-sm text-red-500 hidden mt-1">El nombre es requerido.</p>
                     </div>
                     <div>
-                        <label for="email" class="block text-stone-700">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required class="w-full mt-1 p-2 bg-stone-300 border border-stone-400 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                        <p id="email-error" class="text-sm text-red-400 hidden mt-1">Por favor, ingresa un correo válido.</p>
+                        <label for="email" class="block text-stone-700 font-semibold">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required class="w-full mt-1 p-2 bg-amber-200 border border-amber-400 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-700">
+                        <p id="email-error" class="text-sm text-red-500 hidden mt-1">Por favor, ingresa un correo válido.</p>
                     </div>
                     <div>
-                        <label for="message" class="block text-stone-700">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" required class="w-full mt-1 p-2 bg-stone-300 border border-stone-400 rounded-md focus:outline-none focus:ring-ring-indigo-500"></textarea>
-                        <p id="message-error" class="text-sm text-red-400 hidden mt-1">El mensaje es requerido.</p>
+                        <label for="message" class="block text-stone-700 font-semibold">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full mt-1 p-2 bg-amber-200 border border-amber-400 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-700"></textarea>
+                        <p id="message-error" class="text-sm text-red-500 hidden mt-1">El mensaje es requerido.</p>
                     </div>
-                    <button type="submit" class="w-full bg-orange-600 text-white p-2 rounded-md font-semibold hover:bg-orange-600 transition-colors">Enviar Mensaje</button>
+                    <button type="submit" class="w-full bg-amber-700 text-white p-2 rounded-md font-semibold hover:bg-amber-800 transition-colors shadow-lg">Enviar Mensaje</button>
                     <div id="form-message" class="text-center mt-4 hidden">
-                        <p class="text-green-400 font-medium">¡Mensaje enviado con éxito!</p>
+                        <p class="text-green-600 font-medium">¡Mensaje enviado con éxito!</p>
                     </div>
                 </form>
             </div>
@@ -174,11 +174,11 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-stone-800 text-center py-4 text-stone-400">
+    <footer class="bg-stone-800 text-center py-4 text-amber-400">
         <p>&copy; 2024 Paula Herrera M. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Enlaza el archivo de scripts JavaScript externo -->
-    <script src="scripts.js"></script>
+    <!-- Archivo de scripts -->
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
